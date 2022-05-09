@@ -1,0 +1,53 @@
+@use "../0-abstracts/media" as m;
+
+.testimonials {
+    width: 375px;
+    display: grid;
+    gap: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    .author {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@include m.for-desktop-up (900px) {    
+    .testimonials {
+        width: 75vw;
+        grid-auto-columns: 1fr;
+        grid-template-areas: 
+        'a a b e'
+        'c d d e';
+        }
+        article:nth-child(1) {
+            grid-area: a;
+        }
+        article:nth-child(2) {
+            grid-area: b;
+        }
+        article:nth-child(3) {
+            grid-area: c;
+        }
+        article:nth-child(4) {
+            grid-area: d;
+        }
+        article:nth-child(5) {
+            grid-area: e;
+        }
+
+
+}
+
+@include m.stop-top-overflow (0px,400px) {
+    main {
+
+    }
+}
+@include m.stop-top-overflow (900px,550px) {
+    main {
+
+    }
+}

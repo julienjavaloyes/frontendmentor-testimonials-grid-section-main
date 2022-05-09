@@ -1,0 +1,160 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+*/
+body {
+  background-color: hsl(210deg, 46%, 95%);
+}
+body main {
+  margin: 2rem 0;
+}
+body article .author img {
+  width: 2rem;
+  border-radius: 50%;
+  border: solid 0.1rem hsla(0deg, 100%, 100%, 0.3);
+}
+body article .author .authortext {
+  padding-left: 1rem;
+}
+body article .title {
+  padding-top: 1.5rem;
+}
+body article .text {
+  padding-top: 1.5rem;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: normal;
+}
+body article .author {
+  font-weight: 600;
+}
+body article .type {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+body article .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+body article .text {
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.testimonials {
+  width: 375px;
+  display: grid;
+  gap: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.testimonials .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .testimonials {
+    width: 75vw;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "a a b e" "c d d e";
+  }
+
+  article:nth-child(1) {
+    grid-area: a;
+  }
+
+  article:nth-child(2) {
+    grid-area: b;
+  }
+
+  article:nth-child(3) {
+    grid-area: c;
+  }
+
+  article:nth-child(4) {
+    grid-area: d;
+  }
+
+  article:nth-child(5) {
+    grid-area: e;
+  }
+}
+article {
+  background-color: red;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 1rem 1rem 1rem hsl(0deg, 0%, 81%);
+}
+
+.violet {
+  background-color: hsl(263deg, 55%, 52%);
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: right 2rem top;
+  color: hsl(0deg, 0%, 100%);
+  font-style: "opacity:.1";
+}
+.violet .type {
+  color: hsla(0deg, 0%, 100%, 0.5);
+}
+.violet .text {
+  color: hsla(0deg, 0%, 100%, 0.7);
+}
+
+.gray {
+  background-color: hsl(217deg, 19%, 35%);
+  color: hsl(0deg, 0%, 100%);
+}
+.gray .type {
+  color: hsla(0deg, 0%, 100%, 0.5);
+}
+.gray .text {
+  color: hsla(0deg, 0%, 100%, 0.7);
+}
+
+.white {
+  background-color: hsl(0deg, 0%, 100%);
+}
+.white .type {
+  color: hsla(0deg, 0%, 0%, 0.5);
+}
+.white .text {
+  color: hsla(0deg, 0%, 0%, 0.7);
+}
+
+.black {
+  background-color: black;
+  color: hsl(0deg, 0%, 100%);
+}
+.black .type {
+  color: hsla(0deg, 0%, 100%, 0.5);
+}
+.black .text {
+  color: hsla(0deg, 0%, 100%, 0.7);
+}/*# sourceMappingURL=main.css.map */

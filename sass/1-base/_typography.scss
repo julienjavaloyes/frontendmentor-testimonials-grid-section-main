@@ -1,0 +1,29 @@
+@use  '../0-abstracts/colors' as c;
+//example $fontDisplay: 'Big Shoulders Display', cursive;
+$fontDisplay:  'Barlow Semi Condensed', sans-serif;;
+body {
+    font-family: $fontDisplay;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: normal;
+    article {
+        .author {
+            font-weight: 600;
+            
+        }
+        .type {
+            font-weight: 500; 
+            font-size: 0.8rem;
+        }
+        .title {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        .text {
+            font-weight: 500; 
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+        }
+    }
+}
+

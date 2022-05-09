@@ -1,0 +1,52 @@
+
+@use  '../0-abstracts/colors' as c;
+
+article {
+    background-color: red;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 1rem 1rem 1rem c.$Lightgray;
+}
+.violet {
+    background-color: c.$Moderateviolet;
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: right 2rem top;
+    color:  c.$White;
+    font-style: "opacity:.1";
+    .type{
+        color: c.$White50;
+    }
+    .text {
+        color: c.$White70;
+    }
+}
+.gray {
+    background-color: c.$Verydarkgrayishblue;
+    color:  c.$White;
+    .type{
+        color: c.$White50;
+    }
+    .text {
+        color: c.$White70;
+    }
+}
+.white {
+    background-color: c.$White;
+    .type{
+        color: c.$Black50;
+    }
+    .text {
+        color: c.$Black70;
+    }
+}
+.black {
+    background-color: black;
+    color:  c.$White;
+    .type{
+        color: c.$White50;
+    }
+    .text {
+        color: c.$White70;
+    }
+}

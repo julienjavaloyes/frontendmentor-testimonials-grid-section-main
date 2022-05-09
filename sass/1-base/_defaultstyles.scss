@@ -1,0 +1,28 @@
+
+@use  '../0-abstracts/colors' as c;
+
+body {
+    background-color:c.$Lightgrayishblue;
+    main {
+        margin: 2rem 0;
+    }
+    article {
+        .author {
+            img {
+                width: 2rem;
+                border-radius: 50%;
+                border: solid 0.1rem hsl(0, 100%, 100%,30%);
+            }
+            .authortext {
+                padding-left: 1rem;
+            }
+        }
+        .title {
+            padding-top: 1.5rem;
+        }
+        .text {
+            padding-top: 1.5rem;
+        }
+
+    }
+}
